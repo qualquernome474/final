@@ -217,15 +217,3 @@ body {
     left: 0;
     backface-visibility: hidden;
   }
-@media (min-width: 358px) {
-    .sobre .avatar img{
-      height: 220px;
-      width: 208px;
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-      text-align: center;
-      float: right;
-      margin-bottom: 1.5em;
-      align-items: center;
-      justify-content: center;
-    }
-   }

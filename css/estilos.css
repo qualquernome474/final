@@ -226,7 +226,6 @@ body {
    }
   @media (max-width: 380px) {
     .portfolio {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }

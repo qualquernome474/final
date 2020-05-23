@@ -197,6 +197,8 @@ body {
   .flip-card {
     height: 280px;
     perspective: 1000px;
+    width: 240px;
+    margin: auto;
 }
   .flip-card:hover .card {
     transform: rotateY(180deg);

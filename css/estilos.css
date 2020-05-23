@@ -233,10 +233,9 @@ body {
       flex-direction: column;
    }
   }
-  @media (min-width: 768px) {
+  @media (max-width: 768px) {
     .portfolio .grid {
       display: flex;
       align-items: center;
-      flex-direction: column;
    }
   }

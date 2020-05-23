@@ -225,8 +225,9 @@ body {
     }
    }
   @media (max-width: 558px) {
-    .portfolio .grid{
-    display: grid;
-    gap: 0em;
+    .img-portfolio {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
    }
   }

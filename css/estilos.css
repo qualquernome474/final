@@ -227,6 +227,6 @@ body {
   @media (max-width: 558px) {
     .portfolio .grid{
     display: grid;
-    gap: 5em;
+    gap: 0em;
    }
   }

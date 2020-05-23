@@ -217,7 +217,7 @@ body {
     left: 0;
     backface-visibility: hidden;
   }
-@media (max-width: 357px) {
+@media (max-width: 358px) {
     .sobre .avatar img{
       height: 220px;
       width: 208px;

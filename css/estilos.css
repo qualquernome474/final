@@ -218,7 +218,8 @@ body {
     backface-visibility: hidden;
   }
   @media (max-width: 380px) {
-    .avatar {
-      display: block;
+    .sobre {
+      display: flex;
+      flex-direction: column;
     }
-  }
+   }

@@ -224,9 +224,3 @@ body {
       flex-direction: column;
     }
    }
-  @media (max-width: 380px) {
-    .portfolio {
-        align-items: center;
-    }
-  }
-    

@@ -235,7 +235,6 @@ body {
   }
   @media (max-width: 768px) {
     .portfolio .grid {
-      display: flex;
       align-items: center;
    }
   }

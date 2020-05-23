@@ -1,0 +1,219 @@
+/* soft reset do css */
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:whitesmoke
+}
+img{
+  flex-direction: column;
+}
+body {
+    background-image: url("../imagem/a.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: monospace;
+    height: auto 100vh;
+    font-size: 13px;
+  }
+/* se a tela tiver pelo menos 400px vai carregar esses estilos*/
+  @media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    }
+}
+/*breakpoint*/
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+  header {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu {
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 1s, color 1.5s;
+  }
+  .menu a:active,
+  .menu a:hover {
+    background-color: teal;
+    color: whitesmoke;
+  }
+  a {
+    text-decoration: none;
+    color: teal;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-subtitle,
+  .site-title {
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .site-title {
+    font-size: 4em;
+    font-family: 'Great Vibes', cursive;
+  }
+
+  .site-subtitle {
+    font-style: italic; 
+    font-family: 'Roboto Slab', serif;
+  } 
+  .sobre,
+  .contato,
+  .portfolio{
+    padding: 2em;
+    min-height: 100vh;
+  }
+  .sobre h2,
+  .contato,
+  .portfolio h2 {
+    font-family: 'Roboto Slab', serif; 
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .sobre p {
+   text-indent: 1.5em;
+   margin-bottom: 1.5em;
+  }
+  .portfolio .grid{
+    display: grid;
+    gap: 2em;
+  }
+  @media (min-width: 560px) {
+    .sobre .avatar img,
+    .portfolio .grid{
+    grid-template-columns: 240px 240px;
+   } 
+  }
+  @media (min-width: 880px) {
+    .sobre .avatar img,
+    .portfolio .grid{
+    grid-template-columns: repeat(4, 240px);
+    justify-content: center;
+   }
+  }  
+  .portfolio figure{
+    text-align: center;
+  }
+  .img-portfolio{
+    height: 180px;
+    width: 240px;
+  }
+  .figcaption {
+    font-family: 'Roboto Slab', serif;
+  }
+  .contato a{
+    color: whitesmoke; 
+    font-size: 3em;
+    transition: text-shadow 0.5s;
+  }
+  .menu a:active,
+  .contato a:hover{
+    text-decoration: none;
+    text-shadow: 0px 0px 5px whitesmoke;
+  }
+  .titulo{
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: linear 2s animaçaoTitulo forwards;
+  }
+  @keyframes animaçaoTitulo{
+    100% {
+      transform: scale(1) translateY(0);
+    opacity: 1;
+    }
+  }
+  .contato h2{
+    font-family: 'Roboto Slab', serif; 
+    text-align: center;
+    padding: 30px 0px;
+  }
+  .sobre a{
+   color:whitesmoke; 
+   text-decoration: underline;
+  }
+  .sobre a:hover {
+    color: yellow;
+    transition: 0.3s;
+  }
+  .sobre .avatar{
+    float: right;
+    margin-left: 1.5em;
+  }
+  .sobre .avatar img{
+    height: 330px;
+    width: 330px;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+  }
+  @media (max-width: 360px) {
+    .sobre .avatar img{
+      height: 220px;
+      width: 218px;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      text-align: center;
+    }
+   }
+   @media (max-width: 640px) {
+    .sobre .avatar img{
+      height: 220px;
+      width: 208px;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      text-align: center;
+    }
+   }
+   .card {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  .flip-card {
+    height: 280px;
+    perspective: 1000px;
+}
+  .flip-card:hover .card {
+    transform: rotateY(180deg);
+  }
+  .card-back{
+    background-color: teal;
+    height: 180px;
+    width: 100%;
+    color:whitesmoke;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-front, .card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+  }

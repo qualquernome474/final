@@ -220,7 +220,7 @@ body {
   @media (max-width: 380px) {
     .sobre {
       display: flex;
-      justify-content: center;
+      align-items: center;
       flex-direction: column;
     }
    }

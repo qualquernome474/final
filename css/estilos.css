@@ -223,7 +223,7 @@ body {
       width: 208px;
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
       text-align: center;
-      float: right;
+      float: center;
       margin-bottom: 1.5em;
     }
    }

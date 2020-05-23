@@ -225,7 +225,7 @@ body {
     }
    }
   @media (max-width: 558px) {
-    .portfolio {
+    .portfolio .grid {
       display: flex;
       align-items: center;
       flex-direction: column;

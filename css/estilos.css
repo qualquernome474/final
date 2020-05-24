@@ -233,9 +233,3 @@ body {
       flex-direction: column;
    }
   }
- .portfolio {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column
- }

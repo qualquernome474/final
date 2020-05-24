@@ -85,7 +85,13 @@ body {
   .site-subtitle {
     font-style: italic; 
     font-family: 'Roboto Slab', serif;
-  } 
+  }
+  .portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
   .sobre,
   .contato,
   .portfolio{
